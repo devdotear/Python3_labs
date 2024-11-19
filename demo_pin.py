@@ -16,6 +16,8 @@ while pin != master_pin and attempts < 3:
     else:
         print("Invalid PIN")
         attempts += 1
-
+else:
+    print("Too many attempts")
+    print("Your card has been captured! Have a worse day!")
 
 print("Done.")
