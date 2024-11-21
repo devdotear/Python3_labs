@@ -6,6 +6,7 @@
     Docstring:
 """
 import sys
+import adv
 
 def add(*args):
     """ Return SUM of all parameters """
@@ -33,12 +34,22 @@ def div(x, z) -> float:
     return round(x / z, 3)
 
 
-print("**** BASIC Calculator APP ***")
+def main():
 
-print(f"4 + 3 = {add(4, 3)}")
-print(f"4 + 3 +2 + 1 = {add(4, 3, 2, 1)}")
-print(f"4 * 3 = {mul(4, 3)}")
-print(f"4 - 3 = {sub(4, 3)}")
-print(f"4 / 3 = {div(4, 3)}")
+    print("**** BASIC Calculator APP ***")
 
-sys.exit(0)
+    print(f"4 + 3 = {add(4, 3)}")
+    print(f"4 + 3 +2 + 1 = {add(4, 3, 2, 1)}")
+    print(f"4 * 3 = {mul(4, 3)}")
+    print(f"4 - 3 = {sub(4, 3)}")
+    print(f"4 / 3 = {div(4, 3)}")
+
+    print(f"advanced mode -> 5 to the power of 4 = {adv.power(5, 4)}")
+    return None
+
+
+if __name__ == "__main__":
+    # Execute only if ran directly as a program
+    # Ignore if imported
+    main()
+    sys.exit(0)

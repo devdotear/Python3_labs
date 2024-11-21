@@ -5,7 +5,7 @@
 """
     Advanced Calculator app with power, modulus, and square root functions
 """
-
+import sys
 def power(x, z):
     """ Return the power of x to z """
     return float(x**z)
@@ -18,8 +18,17 @@ def sqrt(x):
     """ Return the square root of x as a float"""
     return round(x**0.5, 3)
 
-print("#### Advanced Calc APP ###")
+def main():
+    print("#### Advanced Calc APP ###")
 
-print(f"5 ** 2 = {power(5, 2)}")
-print(f"4 % 3 = {mod(5,2)}")
-print(f"\N{square root}5 = {sqrt(5)}")
+    print(f"5 ** 2 = {power(5, 2)}")
+    print(f"4 % 3 = {mod(5,2)}")
+    print(f"\N{square root}5 = {sqrt(5)}")
+
+
+
+if __name__ == "__main__":
+    # Execute only if ran directly as a program
+    # Ignore if imported
+    main()
+    sys.exit(0)
