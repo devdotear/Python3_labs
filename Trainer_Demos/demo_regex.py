@@ -8,7 +8,7 @@
 import re
 
 # Open file handle for READING in TEXT mode.
-fh_in = open(r"c:\labs\projects\Python3_labs\labs\words", mode="rt")
+fh_in = open(r"..\labs\words", mode="rt")
 
 # ITERATE through the file handle one line at a time.
 # using an ITERATOR for loop.
