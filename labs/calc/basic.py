@@ -9,7 +9,12 @@ import sys
 import adv
 
 def add(*args):
-    """ Return SUM of all parameters """
+    """ Return SUM of all parameters
+        >>> add(4,3,2)
+        9.0
+
+    """
+
     total = 0
     for num in args:
         total += num
